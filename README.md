@@ -58,7 +58,8 @@ If you are interested in that,
 you may find [this discussion group](https://groups.google.com/forum/#!forum/lidar-mapping) useful.
 
 
-# Downloading the Example Data
+Downloading the Example Data
+============================
 
 The UK Environment Agency publishes Lidar data in Esri Grid ASCII format.
 These data are available for free and cover most of the
@@ -94,6 +95,7 @@ You need the file tq1652_DTM_1m.asc.
 
 
 Installation
+=============
 
 To install the software
 you first need to install the go compiler.
@@ -106,7 +108,8 @@ Once you've installed Go, you can install the esrigrid software like so:
     go get github.com/goblimey/esrigrid
 
 
-# The Demonstration Program
+The Demonstration Program
+==========================
 
 The demonstration program uses the esrigrid module to
 read a file and render it as a picture in .png format.
@@ -138,7 +141,7 @@ There are already plenty of tools available off the shelf that process the data
 in much more sophisticated ways to make all sorts of structures stand out.
 
 
-'''
+```
 PACKAGE DOCUMENTATION
 
 package model
@@ -257,4 +260,4 @@ func (ceg ConcreteEsriGrid) Yllcorner() float32
 
 func MakeEsriGrid() EsriGrid
     MakeEsriGrid creates and returns an EsriGrid object.
-'''
+```
